@@ -13,8 +13,15 @@
 display height flex flex none margin 
 max-width width width
 */
-        * {
-            /* change le box model */
+        .carrousel {
+            box-sizing: border-box;
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+
         }
 
         img {
@@ -43,7 +50,7 @@ max-width width width
     <h1>TP des carousels!</h1>
     <div class="carrousel" x-data="{}">
         <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant">
-            << /button><button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>
+            <</button><button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>
                 <div class="carrousel_parent-ecrans">
                     <div id="ecran-1" class="carrousel_ecran">
                         <figure>
