@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CAROUSEL</title>
+    <title>CARROUSEL</title>
     <script src="//unpkg.com/alpinejs" defer></script>
     <style>
         /* en vrac :
@@ -81,7 +81,7 @@ max-width width width
 0 0 1rem display center flex gap 
 justify-content list-style margin none padding
 */
-        .caroussel_liste-liens {
+        .carrousel_liste-liens {
             display: flex;
             /* aligne horizontalement les enfants */
             justify-content: center;
@@ -99,7 +99,7 @@ justify-content list-style margin none padding
 </head>
 
 <body>
-    <h1>TP Carousel</h1>
+    <h1>TP Carrousel</h1>
     <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
         <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"
             @click="parent = $refs.parent; parent.scrollLeft -= parent.clientWidth">←</button>
@@ -137,12 +137,12 @@ justify-content list-style margin none padding
                 </figure>
             </div>
         </div>
-        <ul class="caroussel_liste-liens">
-            <li><a href="#ecran-1" class="caroussel_lien">ecran 1</a></li>
-            <li><a href="#ecran-2" class="caroussel_lien">ecran 2</a></li>
-            <li><a href="#ecran-3" class="caroussel_lien">ecran 3</a></li>
-            <li><a href="#ecran-4" class="caroussel_lien">ecran 4</a></li>
-            <li><a href="#ecran-5" class="caroussel_lien">ecran 5</a></li>
+        <ul class="carrousel_liste-liens">
+            <li><a href="#ecran-1" class="{actif:hrefCourant==='#ecran-1'}">ecran 1</a></li>
+            <li><a href="#ecran-2" class="carrousel_lien">ecran 2</a></li>
+            <li><a href="#ecran-3" class="carrousel_lien">ecran 3</a></li>
+            <li><a href="#ecran-4" class="carrousel_lien">ecran 4</a></li>
+            <li><a href="#ecran-5" class="carrousel_lien">ecran 5</a></li>
         </ul>
     </div>
 
