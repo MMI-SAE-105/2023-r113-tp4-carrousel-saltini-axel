@@ -95,6 +95,10 @@ justify-content list-style margin none padding
             gap: 1rem;
             /* espace entre les enfants */
         }
+
+        .actif {
+            color: red;
+        }
     </style>
 </head>
 
@@ -138,7 +142,7 @@ justify-content list-style margin none padding
             </div>
         </div>
         <ul class="carrousel_liste-liens">
-            <li><a href="#ecran-1" class="{actif:hrefCourant==='#ecran-1'}">ecran 1</a></li>
+            <li><a href="#ecran-1" :class="{actif:hrefCourant==='#ecran-1'}">ecran 1</a></li>
             <li><a href="#ecran-2" class="carrousel_lien">ecran 2</a></li>
             <li><a href="#ecran-3" class="carrousel_lien">ecran 3</a></li>
             <li><a href="#ecran-4" class="carrousel_lien">ecran 4</a></li>
